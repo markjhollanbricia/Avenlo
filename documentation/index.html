@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOVA — Documentation</title>
+    <style>
+        :root {
+            --primary: #6C5CE7;
+            --primary-dark: #5848D6;
+            --text: #111111;
+            --muted: #666666;
+            --border: #e5e5e5;
+            --surface: #f8f8ff;
+            --background: #ffffff;
+            --code: #f4f4f7;
+            --radius: 12px;
+        }
+
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: var(--text);
+            background: var(--background);
+            line-height: 1.6;
+        }
+
+        a { color: inherit; }
+
+        .layout {
+            display: grid;
+            grid-template-columns: 250px minmax(0, 1fr);
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            overflow-y: auto;
+            padding: 32px 22px;
+            border-right: 1px solid var(--border);
+            background: var(--surface);
+        }
+
+        .brand {
+            display: inline-block;
+            margin-bottom: 8px;
+            color: var(--primary);
+            font-size: 24px;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .tagline {
+            margin: 0 0 28px;
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+        .nav-title {
+            margin: 22px 0 10px;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1.2px;
+            color: var(--primary);
+        }
+
+        .sidebar nav a {
+            display: block;
+            padding: 7px 0;
+            color: var(--muted);
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        .sidebar nav a:hover { color: var(--primary); }
+
+        main {
+            width: min(100%, 900px);
+            padding: 56px 48px 80px;
+            margin: 0 auto;
+        }
+
+        .hero {
+            padding-bottom: 28px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .eyebrow {
+            margin: 0 0 10px;
+            color: var(--primary);
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: clamp(38px, 6vw, 56px);
+            line-height: 1.05;
+            letter-spacing: -1.8px;
+        }
+
+        h2 {
+            margin-top: 48px;
+            padding-top: 12px;
+            font-size: 28px;
+            line-height: 1.2;
+        }
+
+        h3 {
+            margin-top: 28px;
+            font-size: 19px;
+        }
+
+        p, li { color: #333333; }
+        .lead { max-width: 720px; color: var(--muted); font-size: 18px; }
+
+        code {
+            padding: 2px 6px;
+            border-radius: 6px;
+            background: var(--code);
+            font-family: Consolas, Monaco, monospace;
+            font-size: 0.9em;
+        }
+
+        pre {
+            overflow-x: auto;
+            margin: 18px 0;
+            padding: 18px;
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            background: #fafafa;
+        }
+
+        pre code {
+            padding: 0;
+            background: transparent;
+            font-size: 13px;
+            line-height: 1.7;
+        }
+
+        .note {
+            margin: 20px 0;
+            padding: 16px 18px;
+            border-left: 3px solid var(--primary);
+            border-radius: 0 var(--radius) var(--radius) 0;
+            background: var(--surface);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 16px;
+            margin-top: 18px;
+        }
+
+        .card {
+            padding: 18px;
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            background: var(--background);
+        }
+
+        .card strong {
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        .muted { color: var(--muted); }
+
+        footer {
+            margin-top: 56px;
+            padding-top: 22px;
+            border-top: 1px solid var(--border);
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+        @media (max-width: 800px) {
+            .layout { grid-template-columns: 1fr; }
+            .sidebar {
+                position: static;
+                height: auto;
+                border-right: 0;
+                border-bottom: 1px solid var(--border);
+            }
+            main { padding: 36px 22px 60px; }
+            .grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="layout">
+
+    <aside class="sidebar">
+        <a class="brand" href="#top">NOVA</a>
+        <p class="tagline">Modern SaaS Landing Page Template</p>
+
+        <nav>
+            <div class="nav-title">GETTING STARTED</div>
+            <a href="#overview">Overview</a>
+            <a href="#structure">File Structure</a>
+            <a href="#install">Getting Started</a>
+
+            <div class="nav-title">CUSTOMIZATION</div>
+            <a href="#theme">Theme</a>
+            <a href="#brand">Brand & Content</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#features">Features</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contact">Contact Form</a>
+
+            <div class="nav-title">REFERENCE</div>
+            <a href="#responsive">Responsive Design</a>
+            <a href="#javascript">JavaScript</a>
+            <a href="#demo">Demo Content</a>
+            <a href="#support">Support & License</a>
+        </nav>
+    </aside>
+
+    <main id="top">
+
+        <section class="hero" id="overview">
+            <p class="eyebrow">DOCUMENTATION</p>
+            <h1>NOVA</h1>
+            <p class="lead">
+                A clean, responsive SaaS landing page template built with HTML5,
+                CSS3, vanilla JavaScript, and inline SVG.
+            </p>
+        </section>
+
+        <section id="structure">
+            <h2>File Structure</h2>
+            <pre><code>NOVA/
+├── index.html
+├── css/
+│   └── style.css
+├── js/
+│   └── script.js
+├── assets/
+├── documentation/
+│   └── index.html
+├── README.md
+└── LICENSE.txt</code></pre>
+        </section>
+
+        <section id="install">
+            <h2>Getting Started</h2>
+            <p>
+                NOVA is a static front-end template and does not require Node.js,
+                npm, a build tool, or a framework.
+            </p>
+
+            <h3>Option 1 — Open Directly</h3>
+            <p>Open <code>index.html</code> in a modern web browser.</p>
+
+            <h3>Option 2 — Local Development Server</h3>
+            <p>
+                For development, use a local server such as the VS Code Live Server
+                extension. This provides a more realistic development environment.
+            </p>
+
+            <div class="note">
+                <strong>Tip:</strong> Keep the folder structure intact when opening the template locally,
+                especially the paths to <code>css/style.css</code> and <code>js/script.js</code>.
+            </div>
+        </section>
+
+        <section id="theme">
+            <h2>Theme Customization</h2>
+            <p>
+                The quickest way to change the visual identity of NOVA is through the
+                CSS variables at the beginning of <code>css/style.css</code>.
+            </p>
+
+            <h3>Brand Colors</h3>
+            <pre><code>--color-primary: #6C5CE7;
+--color-primary-dark: #5848D6;
+--color-primary-soft: #EEE9FF;
+--color-primary-light: #D8D2FF;</code></pre>
+
+            <h3>Typography</h3>
+            <pre><code>--font-size-sm: 14px;
+--font-size-base: 16px;
+--font-size-lg: 18px;
+--font-size-xl: 22px;
+--font-size-2xl: 34px;
+--font-size-3xl: 42px;
+--font-size-hero: 64px;</code></pre>
+
+            <h3>Radius & Spacing</h3>
+            <pre><code>--radius-sm: 8px;
+--radius-md: 10px;
+--radius-lg: 16px;
+--radius-xl: 24px;
+
+--space-xs: 8px;
+--space-sm: 12px;
+--space-md: 16px;
+--space-lg: 24px;
+--space-xl: 32px;
+--space-2xl: 48px;
+--space-3xl: 80px;</code></pre>
+        </section>
+
+        <section id="brand">
+            <h2>Brand & Content</h2>
+            <p>
+                The demo brand is <strong>NOVA</strong>. Replace it with your own
+                company, startup, product, or agency name.
+            </p>
+
+            <p>
+                Search for the demo content in <code>index.html</code> and replace
+                the headings, descriptions, statistics, names, companies, and other
+                placeholder content with your own copy.
+            </p>
+
+            <div class="grid">
+                <div class="card">
+                    <strong>Logo</strong>
+                    <span class="muted">Update the NOVA text in the navbar, dashboard preview, and footer.</span>
+                </div>
+                <div class="card">
+                    <strong>Hero</strong>
+                    <span class="muted">Update the main headline, description, and CTA labels.</span>
+                </div>
+                <div class="card">
+                    <strong>About</strong>
+                    <span class="muted">Replace the demo company description and statistics.</span>
+                </div>
+                <div class="card">
+                    <strong>Testimonials</strong>
+                    <span class="muted">Replace the fictional names, companies, roles, and quotes.</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing">
+            <h2>Pricing</h2>
+            <p>
+                Pricing cards are located in the Pricing section of <code>index.html</code>.
+                Edit the plan names, prices, billing periods, feature lists, and CTA labels directly in the markup.
+            </p>
+
+            <pre><code>&lt;div class="pricing-card featured"&gt;
+    &lt;span class="pricing-badge"&gt;MOST POPULAR&lt;/span&gt;
+    &lt;h3&gt;Pro&lt;/h3&gt;
+    ...
+&lt;/div&gt;</code></pre>
+
+            <p>
+                Remove the <code>featured</code> class and the <code>pricing-badge</code>
+                if you do not want a highlighted plan.
+            </p>
+        </section>
+
+        <section id="features">
+            <h2>Features</h2>
+            <p>
+                Each feature uses the reusable <code>.feature-card</code> component.
+                You can replace the heading, description, and inline SVG icon.
+            </p>
+
+            <pre><code>&lt;div class="feature-card"&gt;
+    &lt;div class="feature-icon" aria-hidden="true"&gt;
+        ... SVG icon ...
+    &lt;/div&gt;
+
+    &lt;h3&gt;Feature Title&lt;/h3&gt;
+    &lt;p&gt;Feature description.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+        </section>
+
+        <section id="faq">
+            <h2>FAQ</h2>
+            <p>
+                The FAQ uses a lightweight accordion powered by <code>js/script.js</code>.
+                Add another <code>.faq-item</code> to create more questions.
+            </p>
+
+            <p>
+                The current JavaScript keeps one FAQ item open at a time. Clicking the
+                active question closes it.
+            </p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Form</h2>
+            <p>
+                The included contact form is a styled front-end form layout. It does not
+                send or store submissions by itself.
+            </p>
+
+            <div class="note">
+                <strong>Backend required:</strong> Connect the form to your preferred form service,
+                API, server-side handler, or other backend before using it for production submissions.
+            </div>
+
+            <p>
+                Replace the demo email address in <code>index.html</code> with your real contact address.
+            </p>
+        </section>
+
+        <section id="responsive">
+            <h2>Responsive Design</h2>
+            <p>NOVA is designed around three layout ranges:</p>
+
+            <div class="grid">
+                <div class="card">
+                    <strong>Desktop</strong>
+                    <span class="muted">1025px and above</span>
+                </div>
+                <div class="card">
+                    <strong>Tablet</strong>
+                    <span class="muted">769px to 1024px</span>
+                </div>
+                <div class="card">
+                    <strong>Mobile</strong>
+                    <span class="muted">768px and below</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="javascript">
+            <h2>JavaScript</h2>
+            <p>
+                JavaScript is located in <code>js/script.js</code> and handles the interactive behavior of the template.
+            </p>
+
+            <ul>
+                <li>Responsive mobile navigation</li>
+                <li><code>aria-expanded</code> state for the menu</li>
+                <li>Automatic mobile-menu closing after navigation</li>
+                <li>FAQ accordion behavior</li>
+                <li>Mobile menu icon state: menu and close icons</li>
+            </ul>
+        </section>
+
+        <section id="demo">
+            <h2>Demo Content</h2>
+            <p>
+                NOVA contains fictional demonstration content intended to show the structure and visual possibilities of the template.
+            </p>
+
+            <ul>
+                <li>Demo dashboard statistics</li>
+                <li>Demo user names and companies</li>
+                <li>Demo testimonials</li>
+                <li>Demo pricing values</li>
+                <li>Demo contact information</li>
+            </ul>
+
+            <div class="note">
+                Replace demo content before using NOVA for a real client, company, or product website.
+            </div>
+        </section>
+
+        <section id="support">
+            <h2>Support & License</h2>
+            <p>
+                Refer to <code>LICENSE.txt</code> for the license notice included with the template package.
+                Marketplace-specific purchase and usage terms may also apply.
+            </p>
+
+            <p>
+                For template customization, start with the <code>:root</code> theme variables in
+                <code>css/style.css</code> and the content inside <code>index.html</code>.
+            </p>
+
+            <h3>Credits & Dependencies</h3>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Vanilla JavaScript</li>
+                <li>Inline SVG</li>
+            </ul>
+            <p>No CSS framework or JavaScript framework is required.</p>
+        </section>
+
+        <footer>
+            NOVA Documentation — Modern SaaS Landing Page Template
+        </footer>
+
+    </main>
+</div>
+
+</body>
+</html>
