@@ -1,6 +1,6 @@
-# NOVA — Modern SaaS Landing Page Template
+# AVENLO — Modern SaaS Landing Page Template
 
-NOVA is a clean, modern, responsive SaaS landing page template built with plain HTML, CSS, and JavaScript.
+AVENLO is a clean, modern, responsive SaaS landing page template built with plain HTML, CSS, and JavaScript.
 
 It is designed for startups, SaaS products, agencies, digital services, and other modern businesses.
 
@@ -31,7 +31,7 @@ No frameworks or build tools are required.
 ## File Structure
 
 ```text
-NOVA/
+AVENLO/
 │
 ├── index.html
 │
@@ -48,7 +48,7 @@ NOVA/
 
 ## Getting Started
 
-NOVA does not require Node.js, npm, or any build system.
+AVENLO does not require Node.js, npm, or any build system.
 
 Simply open `index.html` in your browser.
 
@@ -122,12 +122,12 @@ You can change the following:
 
 # Changing the Brand
 
-The demo brand is called **NOVA**.
+The demo brand is called **AVENLO**.
 
 To change the brand name, search for:
 
 ```text
-NOVA
+AVENLO
 ```
 
 inside `index.html`.
@@ -359,7 +359,7 @@ No JavaScript framework is required.
 
 # Responsive Breakpoints
 
-NOVA includes three layout ranges:
+AVENLO includes three layout ranges:
 
 ### Desktop
 
@@ -416,7 +416,7 @@ Responsive behavior
 
 The following content is included as sample/demo content and should be replaced when using the template for a real project:
 
-* NOVA brand name
+* AVENLO brand name
 * Demo dashboard information
 * Demo user names
 * Demo companies
@@ -429,7 +429,7 @@ The following content is included as sample/demo content and should be replaced 
 
 # Credits & Dependencies
 
-NOVA is built using:
+AVENLO is built using:
 
 * HTML5
 * CSS3
@@ -452,4 +452,4 @@ Please refer to the license file included with your package for usage and redist
 
 For template-specific support, refer to the documentation included with your purchase.
 
-Enjoy building with NOVA.
+Enjoy building with AVENLO.
