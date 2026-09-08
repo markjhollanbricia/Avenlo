@@ -615,20 +615,20 @@ nav {
 }
 
 .feature-card {
-      padding: var(--space-xl);
+    background: var(--color-background);
     border: 1px solid var(--color-border);
     border-radius: var(--radius-lg);
-    background: var(--color-background);
+    padding: 28px;
     transition:
-        transform 0.25s ease,
-        box-shadow 0.25s ease,
-        border-color 0.25s ease;
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
 }
 
 .feature-card:hover {
-    transform: translateY(-6px);
+  transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(17, 17, 17, 0.08);
     border-color: var(--color-primary-light);
-    box-shadow: 0 16px 40px rgba(108, 92, 231, 0.08);
 }
 
 .feature-icon {
@@ -722,6 +722,17 @@ nav {
     line-height: 1.6;
 }
 
+.features,
+.testimonials,
+.contact {
+    background: var(--color-surface);
+}
+
+.how-it-works,
+.pricing,
+.faq {
+    background: var(--color-background);
+}
 /* =========================
    ABOUT
    ========================= */
@@ -921,10 +932,20 @@ nav {
 }
 
 .testimonial-card {
-    padding: var(--space-xl);
+    background: var(--color-background);
     border: 1px solid var(--color-border);
     border-radius: var(--radius-lg);
-    background: var(--color-background);
+    padding: 28px;
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(17, 17, 17, 0.08);
+    border-color: var(--color-primary-light);
 }
 
 .testimonial-text {
@@ -1311,6 +1332,10 @@ nav {
         padding: 70px 5%;
     }
 
+    .section-header {
+    margin-bottom: 40px;
+}
+
     .section-heading h2 {
         font-size: var(--font-size-2xl);
     }
@@ -1362,8 +1387,20 @@ nav {
     }
 
     .pricing-card.featured {
-        transform: none;
+           border: 2px solid var(--color-primary);
+    box-shadow: 0 16px 40px rgba(108, 92, 231, 0.14);
+    transform: translateY(-6px);
     }
+
+    .pricing-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(17, 17, 17, 0.08);
+}
+
+.pricing-card.featured:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 44px rgba(108, 92, 231, 0.16);
+}
 
     /* Testimonials */
 

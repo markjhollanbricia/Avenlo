@@ -412,7 +412,14 @@ Responsive behavior
 
 ---
 
-# Demo Content
+# 
+
+The names, testimonials, statistics, pricing,
+contact details, and dashboard data included in
+this template are sample content only.
+
+Replace them with your own content before publishing
+your website.
 
 The following content is included as sample/demo content and should be replaced when using the template for a real project:
 
