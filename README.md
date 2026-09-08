@@ -418,7 +418,7 @@ Responsive behavior
 
 ---
 
-# 
+# Demo Content
 
 The names, testimonials, statistics, pricing,
 contact details, and dashboard data included in

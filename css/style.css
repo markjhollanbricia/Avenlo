@@ -1332,7 +1332,7 @@ nav {
         padding: 70px 5%;
     }
 
-    .section-header {
+.section-heading {
     margin-bottom: 40px;
 }
 
@@ -1453,6 +1453,20 @@ nav {
     .footer-bottom {
         margin-top: 40px;
     }
+
+    .contact {
+    padding: 70px 5%;
+}
+
+.contact-content {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    margin-top: 40px;
+}
+
+.contact-form {
+    padding: 24px;
+}
 }
 
 /* =========================
