@@ -30,19 +30,17 @@ No frameworks or build tools are required.
 
 ## File Structure
 
-```text
-AVENLO/
-│
+AVENLO-v1.0.0/
 ├── index.html
-│
+├── README.md
+├── LICENSE.txt
 ├── css/
 │   └── style.css
-│
 ├── js/
 │   └── script.js
-│
-└── README.md
-```
+├── assets/
+└── documentation/
+    └── index.html
 
 ---
 
