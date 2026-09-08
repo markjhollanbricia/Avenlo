@@ -31,7 +31,7 @@ No frameworks or build tools are required.
 ## File Structure
 
 ```text
-AVENLO-v1.0.0/
+AVENLO-SaaS-HTML-Template-v1.0.0/
 │
 ├── index.html
 ├── README.md
@@ -43,7 +43,6 @@ AVENLO-v1.0.0/
 ├── js/
 │   └── script.js
 │
-├── assets/
 │
 └── documentation/
     └── index.html
